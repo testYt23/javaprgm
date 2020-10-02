@@ -20,6 +20,21 @@ class Codechef
 		    for (int i=0;i<n;i++ ){
 		        a[i]=sc.nextInt();
 		    }
+		int ps=0;
+            int ns=0;
+            Set<Integer> s= new HashSet<>();
+            for(int i=0; i<n; i++){
+                if(!s.contains(a[i])){
+                if(a[i]>=0){
+                    ps+=a[i];
+                }
+                else{
+                    ns+=a[i];
+                }
+            }
+                s.add(a[i]);
+            }
+            System.out.println(ps+" "+ns);	
 		    
 		    
 		    
